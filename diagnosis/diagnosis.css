@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+/* 🔵 HERO */
+.hero {
+  background: #cfe6ff; /* same as thank-you */
+  padding: 60px 20px;
+  text-align: center;
+  color: black;
+
+}
+.logo {
+  width: 550px;
+  margin-bottom: 15px;
+}
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color:black;
+}
+
+.info-list {
+    max-width: 750px; 
+    margin: 10px auto 20px; 
+    padding-left: 20px; /* distance from the left edge */
+    list-style-position: inside; /* bullet sticks closer to text */
+    text-align: left;
+    line-height: 1.6;
+    color: black;
+    font-size: 15px;
+}
+
+.info-list li {
+    margin-bottom: 5px; /* space between list items */
+}
+/* 🔵 FOOTER SECTION */
+.footer {
+  background-color:#cfe6ff; /* same as hero */
+  color: black;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px; /* same as hero->cards gap */
+}
+
+.footer h2 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+#img1 {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+#diagnosis {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#b9 {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a6fa5;
+  margin-top: 10px;
+}
+

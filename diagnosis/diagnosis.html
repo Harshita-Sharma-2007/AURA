@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnosis</title>
+    <link rel="stylesheet" href="diagnosis.css">
+</head>
+<body>
+    <div class="hero">
+    <img src="osipi logo.png" class="logo">
+    
+    <div class="heading">DIAGNOSIS</div>
+    
+    <p class="info">
+    Artifact Diagnosis is the process of identifying, categorizing, and understanding unwanted signals or distortions in MRI data. Key steps include:
+</p>
+<ul class="info-list">
+    <li>Visual inspection of MRI slices to spot anomalies</li>
+    <li>Voxel-level analysis to detect signal inconsistencies</li>
+    <li>Comparison across datasets to identify patterns</li>
+    <li>Linking artifacts to causes (hardware, motion, acquisition settings)</li>
+    <li>Supports automated Quality Control (QC) by providing structured knowledge for later analysis</li>
+</ul>
+<p class="info">
+    Use: Helps researchers and clinicians detect, document, and correct artifacts, ensuring higher data quality and reproducibility.
+</p>
+    </div>
+
+
+    </div>
+
+    <!-- DIAGNOSIS SECTION -->
+    <div id="diagnosis">
+
+        <h2 style="text-align:center;">AURA - MRI Artifact Analyzer</h2>
+
+        <!-- Upload -->
+        <input type="file" id="upload" accept="image/*"><br><br>
+
+        <img id="preview" style="max-width:300px; display:none; border:1px solid #ccc;">
+
+        <!-- Checkboxes -->
+        <input type="checkbox" id="blur"> Image is blurred <br>
+        <input type="checkbox" id="motion"> Motion visible <br>
+        <input type="checkbox" id="distortion"> Distortion present <br>
+        <input type="checkbox" id="noise"> Noise/grainy image <br>
+        <input type="checkbox" id="dark"> Dark patches <br>
+
+        <!-- Analyze Button -->
+        <button onclick="analyze()">Analyze</button>
+
+        <!-- Result -->
+        <div id="result"></div>
+
+    </div>
+
+    <section class="footer">
+    <div class="footer-content">
+    <h2>Advancing Medical Imaging Together</h2>
+    <p>We appreciate your interest in AURA. Your support and feedback help us build better solutions.</p>
+    <p>Contact us: <a href="mailto:ismrmosipi@gmail.com">ismrmosipi@gmail.com</a></p>
+    </div>
+    </section>
+
+    <script src="diagonsis.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+/* 🔵 HERO */
+.hero {
+  background: #cfe6ff; /* same as thank-you */
+  padding: 60px 20px;
+  text-align: center;
+  color: black;
+
+}
+
+.logo {
+  width: 550px;
+  margin-bottom: 15px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color:black;
+}
+
+.info {
+  max-width: 750px;
+  margin: auto;
+  font-size: 15px;
+  color: black;
+  line-height: 1.6;
+}
+
+/* 🔲 CARDS GRID */
+.cards {
+  margin: 60px auto; /* equal gap top and bottom from blue sections */
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  justify-content: center;
+  gap: 40px;
+}
+
+/* CARD */
+.card {
+  width: 170px;
+  height: 170px;
+  perspective: 1000px;
+  text-decoration: none;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner,
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card-front {
+  background: white;
+  border: 2px solid #d9eaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.card-back {
+  background: #f7fbff;
+  transform: rotateY(180deg);
+  padding: 15px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 🔵 FOOTER SECTION */
+.footer {
+  background-color:#cfe6ff; /* same as hero */
+  color: black;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px; /* same as hero->cards gap */
+}
+
+.footer h2 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 150px);
+    gap: 25px;
+    margin: 40px auto; /* slightly smaller for mobile */
+  }
+
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+}
