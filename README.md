@@ -130,20 +130,9 @@ Includes artifacts such as:
 - Modular frontend architecture
 
 ---
-
-##  How to Run
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Harshita-Sharma-2007/AURA.git
-2. Open:
-index.html
-3. Run in browser
-
-
----
-
-## Author
+## Author 
 
 Harshita Sharma
 B.Tech CSE | GSOC 2026 Aspirant
+
+---
